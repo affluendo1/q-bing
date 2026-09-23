@@ -2182,7 +2182,7 @@ function bindSettingsControls(){
 function rerenderAll(){
 refreshPuzzleUI();
 refreshStats();
-refreshStatsPage();
+renderStatsPage();
 refreshTable();
 if(mode==="stopped"&&!inspecting&&els.time){
   const active=getActiveSolves(),latest=active[active.length-1];
