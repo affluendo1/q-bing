@@ -1,13 +1,12 @@
 # q-bing
 
-A single-file cubing timer app. Open [index.html](index.html) in a browser; there is no build step or dependency installation.
+A single-page cubing timer with a focused timer view, solves, statistics, sessions, scramble tools, and settings.
 
-## Included
+## Architecture
 
-- Spacebar timer with hold-to-ready and inspection support
-- Scramble display and solve/session tracking
-- Penalties, rolling averages, and session statistics
-- Theme and timer settings
-- Browser-local save data, with import/export controls in Settings
+- `index.html` contains the app markup and loads the external assets.
+- `assets/css/app.css` contains the app theme, layout, and component styling.
+- `assets/js/app.js` contains the timer and app behavior.
+- `.github/workflows/deploy-pages.yml` publishes the static app to GitHub Pages on pushes to `main`.
 
-All app styles and scripts are bundled in `index.html`.
+Open `index.html` directly in a browser for local use. No build step or package installation is needed. App data is stored in browser local storage; Settings includes data import and export controls.
